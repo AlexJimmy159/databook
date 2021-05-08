@@ -10,6 +10,9 @@
 		$consulta = "SELECT * FROM libros WHERE titulo LIKE '%$titulo%' ORDER BY titulo";
 	}else{
 		$consulta = "SELECT * FROM libros ORDER BY titulo";
+
+
+		
 	}
 
 	$resultado = $conexion->query($consulta);
